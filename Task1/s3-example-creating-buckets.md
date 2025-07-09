@@ -29,7 +29,7 @@ aws s3api create-bucket --bucket my-bucket-name --region us-west-1 --create-buck
 
 > You can take a screenshot of your terminal after running the above command and include it here.
 
-![screenshot](screenshots/create-bucket-example.png)
+![screenshot](create-bucket-example.png)
 
 ---
 
