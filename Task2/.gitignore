@@ -1,0 +1,35 @@
+# Test and Compiler files
+!jest.config.js
+!.eslintrc.js
+*.d.ts
+tmp
+
+# Generated ouputs
+dist
+coverage
+docs
+npm-debug.log
+*.zip
+global-s3-assets
+regional-s3-assets
+eslint_report.json
+staging
+__snapshots__
+source/services/utils/*/index.js
+
+# Node dependencies
+node_modules
+
+# CDK Misc files
+# cdk.context.json
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+cdk.context.json
+
+# Parcel build directories
+.cache
+.build
+.DS_Store
+

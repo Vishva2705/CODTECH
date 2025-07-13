@@ -1,0 +1,25 @@
+{
+  "name": "cw-monitoring-framework",
+  "description": "AWS Horus - A CloudWatch Monitoring Framework",
+  "license": "Apache-2.0",
+  "version": "1.2.6",
+  "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js . --ext .ts",
+    "prettier-format": "./node_modules/prettier/bin-prettier.js --config .prettierrc.yml '**/*.ts' --write",
+    "build:helper": "cd source/services/helper && npm run build:all",
+    "build:tagHandler": "cd source/services/tagHandler && npm run build:all",
+    "build:dashboardHandler": "cd source/services/dashboardHandler && npm run build:all",
+    "build": "npm run build:helper && npm run build:tagHandler && npm run build:dashboardHandler",
+    "test": "cd ./deployment && chmod +x run-unit-tests.sh && ./run-unit-tests.sh"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
